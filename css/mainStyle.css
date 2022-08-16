@@ -1,0 +1,26 @@
+body{
+  margin:0;
+  background-color: #4B688B;
+}
+
+.titulo{
+  text-align: center;
+  font-family: 'Alegreya Sans';
+  font-size: 60pt;
+  color: #F1F1F1;
+
+  padding-bottom: 20%;
+  padding-top: 20%;
+
+  background: #2B4A6F;
+}
+
+.contenido{
+  margin: 0;
+  padding: 10px;
+
+  font-size: 20pt;
+  font-family: 'Alegreya Sans';
+  text-align: justify;
+  color: #F1F1F1;
+}
