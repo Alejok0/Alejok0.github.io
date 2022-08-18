@@ -3,11 +3,11 @@
   margin: 0px;
 }
 
-html{
+html {
   font-family: 'Alegreya Sans';
 }
 
-header{
+header {
   padding-bottom: 20%;
   padding-top: 20%;
 
@@ -20,13 +20,13 @@ header h1 {
   color: #F1F1F1;
 }
 
-body{
+body {
   background-color: #4B688B;
 }
 
-.contenedor{
-  margin: 0;
-  padding: 10px;
+.contenedor {
+  padding: 1rem;
+  margin-bottom: 30px;
 
   display: flex;
   flex-wrap: wrap;
@@ -36,19 +36,25 @@ body{
   font-size: 20pt;
   text-align: justify;
   color: #F1F1F1;
-  
+
   margin: 20px auto;
   min-width: 250;
+  width: 80%;
 }
 
-footer{
+footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
   padding: 3rem;
   background-color: #2B4A6F;
   color: #fff;
 }
 
-footer section{
-   float: right;
+footer section {
+  float: right;
 
 }
 
@@ -56,14 +62,14 @@ footer p {
   display: inline;
 }
 
-footer a{
-  margin: 0px 5px ;
+footer a {
+  margin: 0px 5px;
 
   transition: color .2s ease;
   color: #fff;
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   color: #d3d3d3;
 }
