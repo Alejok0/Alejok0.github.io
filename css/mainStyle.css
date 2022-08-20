@@ -3,11 +3,12 @@
   margin: 0px;
 }
 
-html{
-  font-family: 'Alegreya Sans';
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Mono', monospace;
 }
 
-header{
+header {
   padding-bottom: 20%;
   padding-top: 20%;
 
@@ -15,42 +16,75 @@ header{
 }
 
 header h1 {
+  font-family: monospace;
   text-align: center;
-  font-size: 60pt;
+  font-size: 50pt;
   color: #F1F1F1;
 }
 
-body{
+header h2 {
+  font-family: sans-serif;
+  text-align: center;
+  color: #F1F1F1;
+  font-size: 40;
+}
+
+body {
   background-color: #4B688B;
 }
 
-.contenedor{
+.contenedor {
   padding: 1rem;
   margin-bottom: 30px;
 }
 
 .post {
-  font-size: 20pt;
   text-align: justify;
+
   color: #F1F1F1;
-  
+  background-color: #7b9cc5;
+  transition: box-shadow .2s ease;
+
+  border-radius: 5px;
+
+  padding: 15px 0px;
   margin: 20px auto;
   min-width: 250;
   width: 80%;
 }
 
-footer{
+.post:hover {
+  box-shadow: 3px 3px 5px slategray;
+}
+
+.post h2 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.post img {
+  padding: 0 auto;
+  width: 100%;
+}
+
+.post p {
+  padding: 10px;
+  font-size: 15;
+}
+
+footer {
   bottom: 0;
-  
-  width: 96%; 
+
+  width: 96%;
 
   padding: 3rem 2%;
   background-color: #2B4A6F;
   color: #fff;
 }
 
-footer section{
-   float: right;
+footer section {
+  float: right;
 
 }
 
@@ -58,14 +92,14 @@ footer p {
   display: inline;
 }
 
-footer a{
-  margin: 0px 5px ;
+footer a {
+  margin: 0px 5px;
 
   transition: color .2s ease;
   color: #fff;
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   color: #d3d3d3;
 }
