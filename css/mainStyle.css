@@ -36,6 +36,10 @@ body {
 .contenedor {
   padding: 1rem;
   margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .post {
@@ -49,8 +53,8 @@ body {
 
   padding: 15px 0px;
   margin: 20px auto;
-  min-width: 250;
   width: 80%;
+  min-width: 150px;
 }
 
 .post:hover {
@@ -102,4 +106,49 @@ footer a {
 
 footer a:hover {
   color: #d3d3d3;
+}
+
+@media (max-width: 450px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenedor{
+    padding: 0;
+  }
+
+  .post {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  footer {
+    bottom: 0;
+    width: 96%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 3rem 2%;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  footer a{
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
 }
