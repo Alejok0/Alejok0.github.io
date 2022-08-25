@@ -1,10 +1,10 @@
 * {
   padding: 0;
   margin: 0;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
-:root{
+:root {
   --colorFondo: #f0f0f0;
   --colorPrincipal: #1f1f1f;
   --colorSecundario: #535353;
@@ -18,13 +18,13 @@ html {
   background-color: var(--colorFondo);
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.opcionMenu{
+.opcionMenu {
   font-family: var(--fuentePrincipal);
   font-size: 20pt;
   margin: 15px 10px;
@@ -33,12 +33,12 @@ html {
   color: var(--colorPrincipal);
 }
 
-.opcionMenu:hover{
+.opcionMenu:hover {
   cursor: pointer;
   color: var(--colorSecundario);
 }
 
-.titulo{
+.titulo {
   font-family: var(--fuentePrincipal);
 
   display: flex;
@@ -63,4 +63,31 @@ html {
   text-align: center;
   color: var(--colorPrincipal);
   font-size: 40;
+}
+
+@media screen and (max-width: 600px) {
+  .titulo {
+    overflow: visible;
+    height: 80vh;
+  }
+
+  .titulo h1{
+    font-size: 40pt;
+  }
+
+  .opcionMenu{
+    font-size: 18pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .opcionMenu{
+    padding: 5px 0;
+    margin: 0%;
+  }
 }
