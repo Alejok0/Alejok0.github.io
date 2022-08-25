@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=PT+Mono&display=swap"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/mainStyle.css">
   <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -22,13 +22,13 @@
   <header >
     <nav class="contenedorMenu">
       <ul class="menu">
-        <li class="opcionMenu">Inicio<a href="" class="linkOpcion"></a></li>
-        <li class="opcionMenu">Proyectos<a href="" class="linkOpcion"></a></li>
-        <li class="opcionMenu">Acerca de<a href="" class="linkOpcion"></a></li>
+        <li class="opcionMenu" id="inicio">Inicio</li>
+        <li class="opcionMenu" id="proyectos">Proyectos</li>
+        <li class="opcionMenu" id="acercaDe">Acerca de</li>
       </ul>
     </nav>
   </header>
-  <section class="titulo">
+  <section id="seccionPrincipal" class="titulo">
     <h1>Hola, soy Alejandro ;)</h1>
     <h2 id="frase"></h2>
   </section>
