@@ -1,11 +1,10 @@
-'use strict'
-
-window.addEventListener('load', function () {
-
-  function enviarCorreo() {
-    /*
-      Esta funcion servirá para enviar un correo de contacto.
-      window.open('mailto:test@example.com?subject=subject&body=body');
-     */
-  }
+$(document).ready(function () {
+  var frase = ["Hago programas y soluciono problemas"];
+  var elemento = $("#frase");
+  
+  insertarTexto(elemento,frase[0]);
 });
+
+function insertarTexto(elemento, contenido) {
+  $(elemento).text($(elemento).text() + contenido);
+}  
