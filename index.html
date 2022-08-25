@@ -11,39 +11,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=PT+Mono&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/mainStyle.css">
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
   <!-- Titulo y entrada principal -->
-  <header id="titulo">
-    <h1>Hola, soy Alejandro ;)</h1>
-    <h2>Hago programas y soluciono problemas.</h2>
+  <header >
+    <nav class="contenedorMenu">
+      <ul class="menu">
+        <li class="opcionMenu">Inicio<a href="" class="linkOpcion"></a></li>
+        <li class="opcionMenu">Proyectos<a href="" class="linkOpcion"></a></li>
+        <li class="opcionMenu">Acerca de<a href="" class="linkOpcion"></a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- Aqui esta todo el contenido -->
-  <section class="contenedor">
-    <!-- Aqui empiezan los post de contenido -->
-    <article class="post">
-      <h2>
-        CRUD a una base de datos con java.
-      </h2>
-      <img src="proyectos/CRUDbaseDeDatos/ventanaMaximizada.png" alt="Interfaz responsiva java">
-      <p>
-        En este programa, hecho con la herramienta de creacion de interfaces graficas de Netbeans,
-        realice un CRUD [Create (Crear), Read(Leer), Update(Actualizar) y Delete(Eliminar)] a una base
-        de datos.
-      </p>
-    </article>
+  <section class="titulo">
+    <h1>Hola, soy Alejandro ;)</h1>
+    <h2 id="frase"></h2>
   </section>
-  <footer>
-    <p>Copyright 2022</p>
-    <section>
-      <a href="#">Ir al comienzo</a>
-      <!-- Proximamente link a formulario de contacto vease js -->
-      <a href="mailto:ale.ghost32@gmail.com">Contactame</a>
-    </section>
 </body>
-</footer>
 
 </html>
