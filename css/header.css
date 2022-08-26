@@ -22,6 +22,10 @@ html {
   background-color: var(--colorFondo);
 }
 
+.contenedorMenu{
+  width: 100%;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
