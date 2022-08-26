@@ -1,28 +1,55 @@
 $(document).ready(function () {
-  var frase = ["Hago programas","Soluciono problemas","Hago programas y soluciono problemas"];
+  var frase = ["Hago programas", "Soluciono problemas", "Hago programas y soluciono problemas"];
   var elemento = $("#frase");
   var that = $(this);
+  var contenido = that.find("#seccionPrincipal");
 
   animacionInicial(elemento, frase);
+
+  $("#inicio").click(function () {
+    limpiarPaginaActual(contenido);
+    $("#estiloActual").attr("href", "css/inicio.css");
+    $(contenido).addClass("titulo");
+    cargarPaginaInicio(contenido);
+  });
+
+  $("#proyectos").click(function () {
+    limpiarPaginaActual(contenido);
+    $("#estiloActual").attr("href", "css/proyectos.css");
+    $(contenido).addClass("contenedor");
+    $(contenido).load("proyectos.html");
+  })
+
+  $("#acercaDe").click(function () {
+    limpiarPaginaActual(contenido);
+    $("#estiloActual").attr("href", "css/acercaDe.css");
+    $(contenido).addClass("contenedor");
+    $(contenido).load("acercaDe.html");
+  });
+
 });
 
+function limpiarPaginaActual(elemento) {
+  $(elemento).empty();
+  $(elemento).removeClass();
+}
 
-function animacionInicial(elemento, frase){
+function animacionInicial(elemento, frase) {
   setTimeout(function () {
     animacionIncercionTexto(elemento, frase[0]);
-  },1000);
+  }, 1000);
   setTimeout(function () {
     animacionExtraccionTexto(elemento, frase[0]);
   }, 2800);
   setTimeout(function () {
     animacionIncercionTexto(elemento, frase[1]);
   }, 5600);
-   setTimeout(function () {
+  setTimeout(function () {
     animacionExtraccionTexto(elemento, frase[1]);
-   }, 8400);
-   setTimeout(function () {
+  }, 8400);
+  setTimeout(function () {
     animacionIncercionTexto(elemento, frase[2]);
-   }, 11200);
+  }, 11200);
 }
 
 function animacionIncercionTexto(elemento, contenido) {
@@ -41,6 +68,11 @@ function animacionExtraccionTexto(elemento, contenido) {
       quitarUnCaracter(elemento);
     }, 100 + (100 * iterador));
   }
+}
+
+function cargarPaginaInicio(elemento) {
+  $(elemento).append('<h1>Hola, soy Alejandro ;)</h1>');
+$(elemento).append('<h2 id="frase">Hago programas y soluciono problemas</h2>');
 }
 
 function insertarTexto(elemento, contenido) {

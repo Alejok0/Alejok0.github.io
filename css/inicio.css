@@ -1,0 +1,37 @@
+.titulo {
+  font-family: var(--fuentePrincipal);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 80vh;
+}
+
+.titulo h1 {
+  font-weight: var(--grosorAncho);
+  text-align: center;
+  font-size: 50pt;
+  color: var(--colorPrincipal);
+}
+
+.titulo h2 {
+  margin-top: 15px;
+  font-weight: var(--grosorNormal);
+  text-align: center;
+  color: var(--colorPrincipal);
+  font-size: 20pt;
+}
+
+@media screen and (max-width: 600px) {
+  .titulo {
+    overflow: visible;
+    height: 80vh;
+  }
+
+  .titulo h1 {
+    font-size: 40pt;
+  }
+}
