@@ -17,14 +17,14 @@ $(document).ready(function () {
     limpiarPaginaActual(contenido);
     $("#estiloActual").attr("href", "css/proyectos.css");
     $(contenido).addClass("contenedor");
-    $(contenido).load("https://alejok0.github.io/proyectos.html");
+    $(contenido).load("proyectos.html");
   })
 
   $("#acercaDe").click(function () {
     limpiarPaginaActual(contenido);
     $("#estiloActual").attr("href", "css/acercaDe.css");
     $(contenido).addClass("contenedor");
-    $(contenido).load("https://alejok0.github.io/acercaDe.html");
+    $(contenido).load("acercaDe.html");
   });
 
 });
