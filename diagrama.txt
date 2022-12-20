@@ -1,0 +1,7 @@
+Usuario -> Pagina_principal: Carga la pagina
+Usuario <- Pagina_principal <head>: Inicio, Proyectos, Acerca de
+Usuario <- Pagina_principal <body>: Inicio
+Usuario -> Pagina_principal <head>: *Click* en proyectos
+Pagina_principal <head> -> main.js: $("#proyectos").click(function ()
+main.js -> Pagina_principal <body>: $(contenido).load("proyectos.html")
+Usuario <- Pagina_principal <body>: Proyectos
