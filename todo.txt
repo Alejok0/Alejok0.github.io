@@ -1,0 +1,4 @@
+- Mostrar mis proyectos provenientes de github
+- Arreglar el diseño que se distorciona
+- Arreglar error en la animacion de inicio
+- Descargar las fuentes y usarlas desde una carpeta
